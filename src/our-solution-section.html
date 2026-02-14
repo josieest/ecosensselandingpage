@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ecosenssehealth — Our Solution</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy:    #0A2342;
+    --teal:    #0D7377;
+    --teal-lt: #14C0C6;
+    --white:   #FFFFFF;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #F8FAFC;
+  }
+
+  .solution {
+    position: relative;
+    overflow: hidden;
+    background: #0D1F38;
+  }
+
+  /* ── CIRCUIT BACKGROUND ── */
+  .circuit-bg {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .circuit-bg::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(13,192,198,0.1) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(13,192,198,0.1) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  .circuit-bg::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle, rgba(13,192,198,0.4) 1.5px, transparent 1.5px);
+    background-size: 40px 40px;
+    opacity: 0.3;
+  }
+
+  .circuit-traces {
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(90deg, transparent 15%, rgba(13,192,198,0.18) 15%, rgba(13,192,198,0.18) 15.4%, transparent 15.4%),
+      linear-gradient(90deg, transparent 55%, rgba(13,192,198,0.12) 55%, rgba(13,192,198,0.12) 55.3%, transparent 55.3%),
+      linear-gradient(90deg, transparent 78%, rgba(13,192,198,0.15) 78%, rgba(13,192,198,0.15) 78.3%, transparent 78.3%),
+      linear-gradient(180deg, transparent 20%, rgba(13,192,198,0.15) 20%, rgba(13,192,198,0.15) 20.4%, transparent 20.4%),
+      linear-gradient(180deg, transparent 60%, rgba(13,192,198,0.12) 60%, rgba(13,192,198,0.12) 60.3%, transparent 60.3%),
+      linear-gradient(180deg, transparent 82%, rgba(13,192,198,0.15) 82%, rgba(13,192,198,0.15) 82.3%, transparent 82.3%);
+  }
+
+  .circuit-vignette {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse 75% 75% at 50% 50%, transparent 25%, rgba(13,31,56,0.72) 100%);
+    z-index: 1;
+  }
+
+  /* ── INNER ── */
+  .solution-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 100px 40px;
+    position: relative;
+    z-index: 2;
+  }
+
+  /* ── HEADER ── */
+  .solution-header {
+    text-align: center;
+    margin-bottom: 56px;
+  }
+
+  .section-eyebrow {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--teal-lt);
+    margin-bottom: 16px;
+  }
+
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(28px, 3.5vw, 44px);
+    font-weight: 900;
+    color: var(--white);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    margin-bottom: 20px;
+  }
+
+  .section-title em {
+    font-style: italic;
+    color: var(--teal-lt);
+  }
+
+  .section-sub {
+    font-size: 16px;
+    color: rgba(255,255,255,0.55);
+    line-height: 1.75;
+    font-weight: 300;
+    max-width: 580px;
+    margin: 0 auto;
+  }
+
+  .section-sub strong {
+    color: rgba(255,255,255,0.85);
+    font-weight: 600;
+  }
+
+  /* ── DIAGRAM ── */
+  .diagram-wrap {
+    max-width: 700px;
+    margin: 0 auto 56px;
+    position: relative;
+  }
+
+  /* Soft glow behind the diagram */
+  .diagram-wrap::before {
+    content: '';
+    position: absolute;
+    inset: -20px;
+    background: radial-gradient(ellipse 80% 80% at 50% 50%, rgba(13,192,198,0.1) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .diagram-wrap img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+    box-shadow:
+      0 0 0 1px rgba(13,192,198,0.15),
+      0 24px 64px rgba(0,0,0,0.45),
+      0 0 80px rgba(13,192,198,0.06);
+  }
+
+  /* ── HANDOFF ── */
+  .solution-handoff {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 22px 40px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 14px;
+    border: 1px solid rgba(255,255,255,0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    transition: border-color 0.2s, background 0.2s;
+    text-decoration: none;
+  }
+
+  .solution-handoff:hover {
+    background: rgba(255,255,255,0.08);
+    border-color: rgba(13,192,198,0.35);
+  }
+
+  .handoff-text {
+    font-size: 14px;
+    color: rgba(255,255,255,0.55);
+    text-align: center;
+    line-height: 1.6;
+  }
+
+  .handoff-text a {
+    color: var(--teal-lt);
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .handoff-text a:hover { color: var(--white); }
+
+  .handoff-arrow {
+    font-size: 18px;
+    color: var(--teal-lt);
+    flex-shrink: 0;
+    animation: nudge 2s ease infinite;
+  }
+
+  @keyframes nudge {
+    0%, 100% { transform: translateX(0); }
+    50%       { transform: translateX(5px); }
+  }
+
+  /* ── ANIMATIONS ── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .solution-header  { animation: fadeUp 0.7s ease 0.1s both; }
+  .diagram-wrap     { animation: fadeUp 0.7s ease 0.25s both; }
+  .solution-handoff { animation: fadeUp 0.7s ease 0.4s both; }
+
+  @media (max-width: 600px) {
+    .solution-inner   { padding: 60px 20px; }
+    .solution-handoff { flex-direction: column; padding: 20px; }
+  }
+</style>
+</head>
+<body>
+
+<section class="solution">
+  <div class="circuit-bg">
+    <div class="circuit-traces"></div>
+    <div class="circuit-vignette"></div>
+  </div>
+
+  <div class="solution-inner">
+
+    <div class="solution-header">
+      <p class="section-eyebrow">Our Solution</p>
+      <h2 class="section-title">The UK care system is fragmented.<br><em>ecosensse unifies it.</em></h2>
+      <p class="section-sub">
+        Right now, agencies, families, elderly individuals and the NHS all operate in silos —
+        each with incomplete information and no shared visibility.
+        ecosensse is the <strong>intelligent connective layer</strong> that brings every
+        stakeholder into one unified platform, turning reactive crisis management into
+        coordinated, proactive care.
+      </p>
+    </div>
+
+    <div class="diagram-wrap">
+      <img
+        src="figma:asset/e179407e8ad0e05f68abc4a440cc86c16146e6c6.png"
+        alt="ECOSENSSE Ecosystem: The Unified Circle of Care"
+      />
+    </div>
+
+    <div class="solution-handoff">
+      <p class="handoff-text">
+        Want to understand exactly how it all works together?
+        <a href="#platform">See the full platform workflow →</a>
+      </p>
+      <span class="handoff-arrow">→</span>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>
