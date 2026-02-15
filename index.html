@@ -3,98 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ECOSENSSE | Home Care SaaS</title>
+    <title>ECOSENSSE | Proactive Elderly Care SaaS</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
     <style>
-        @keyframes fadeUp {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
+        html { scroll-behavior: smooth; }
+        @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
         .animate-fadeUp { animation: fadeUp 0.8s forwards; }
     </style>
 </head>
 <body class="bg-[#0D1F38] text-white font-sans">
 
-    <section class="min-h-[85vh] flex flex-col justify-center relative pt-[100px] pb-16 px-6 md:px-12 overflow-hidden bg-[#0D1F38]" 
+    <nav class="sticky top-0 z-50 w-full bg-white/95 backdrop-blur border-b border-gray-200">
+        <div class="max-w-[1200px] mx-auto flex h-20 items-center justify-between px-6">
+            <div class="flex items-center space-x-2">
+                <span class="font-bold text-2xl text-[#0A2342]">eco<span style="color: #d4183d">SENSSE</span>health</span>
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#problem" class="text-sm font-bold text-[#0A2342] hover:text-[#d4183d]">Problem</a>
+                <a href="#solution" class="text-sm font-bold text-[#0A2342] hover:text-[#d4183d]">Solution</a>
+                <a href="#platform" class="text-sm font-bold text-[#0A2342] hover:text-[#d4183d]">Platform</a>
+                <a href="#pricing" class="text-sm font-bold text-[#0A2342] hover:text-[#d4183d]">Pricing</a>
+                <a href="mailto:contact@ecosenssehealth.com" class="px-5 py-2.5 bg-[#0D7377] text-white rounded-lg text-sm font-bold">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="min-h-[70vh] flex flex-col justify-center relative py-20 px-6 overflow-hidden bg-[#0D1F38]" 
              style="background-image: linear-gradient(rgba(13,192,198,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(13,192,198,0.1) 1px, transparent 1px); background-size: 40px 40px;">
-        
-        <div class="relative z-10 max-w-[1200px] mx-auto w-full">
-            <h1 class="mb-10">
-                <span class="block font-['Playfair_Display'] text-[clamp(32px,4.9vw,66px)] font-black text-white leading-[1.0] tracking-tight animate-fadeUp">
-                    The Cost of Silence is <span class="relative inline-block text-[#E8A020]">£2.3 Billion.</span>
+        <div class="relative z-10 max-w-[1200px] mx-auto">
+            <h1 class="mb-10 animate-fadeUp">
+                <span class="block font-['Playfair_Display'] text-[clamp(32px,5vw,66px)] font-black leading-tight">
+                    The Cost of Silence is <span class="text-[#E8A020]">£2.3 Billion.</span>
                 </span>
             </h1>
-
-            <div class="mb-8 py-5 pl-6 border-l-[3px] border-[#0D7377] animate-fadeUp" style="animation-delay: 0.4s">
-                <p class="text-base font-bold tracking-[0.2em] uppercase text-[#14C0C6] mb-2.5">The Black Box of Home Care</p>
-                <p class="text-[clamp(17px,2vw,21px)] text-[#E8EDF4]/75 leading-[1.7] font-light">
-                    Every year, <strong>"minor" unmonitored events</strong> escalate into major UK hospital admissions. 
-                    Between care visits, nobody is watching. <strong>ecosensse ends the silence.</strong>
+            <div class="mb-8 py-5 pl-6 border-l-[3px] border-[#0D7377] animate-fadeUp" style="animation-delay: 0.2s">
+                <p class="text-[clamp(17px,2vw,21px)] text-[#E8EDF4]/75 leading-relaxed font-light">
+                    Every year, unmonitored events escalate into major UK hospital admissions. <br><strong>ECOSENSSE ends the silence between care visits.</strong>
                 </p>
             </div>
-
-            <div class="flex items-center gap-5 flex-wrap animate-fadeUp" style="animation-delay: 0.7s">
-                <a href="#" class="px-8 py-4 bg-[#0D7377] text-white rounded-[10px] text-sm font-bold hover:bg-[#14C0C6] transition-all">Get Started →</a>
-                <a href="#" class="px-7 py-[15px] border border-white/20 text-white/70 rounded-[10px] text-[15px] hover:border-white">Register Pilot Interest</a>
-            </div>
         </div>
     </section>
 
-    <section class="py-24 bg-white text-gray-900">
-        <div class="max-w-[1200px] mx-auto px-10">
+    <section id="problem" class="py-24 bg-[#F7F7F8] text-[#0A2342]">
+        <div class="max-w-[1200px] mx-auto px-6">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-5xl font-bold mb-4">Simple, transparent pricing.</h2>
-                <p class="text-lg text-gray-600">Plans built specifically for how you engage with elderly care.</p>
+                <h2 class="text-3xl md:text-5xl font-bold mb-4">The Problem</h2>
+                <p class="max-w-2xl mx-auto text-lg opacity-70">The current care system fails everyone involved—from overwhelmed agencies to anxious families.</p>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white rounded-[20px] border border-gray-200 p-8 hover:shadow-xl transition-all">
-                    <h3 class="text-xl font-bold text-center mb-4">Family Care</h3>
-                    <div class="text-center mb-6">
-                        <span class="text-4xl font-black text-[#1B7A4A]">£10</span>
-                        <span class="text-gray-500">/month</span>
-                    </div>
-                    <ul class="text-sm space-y-3 mb-8">
-                        <li>✓ Live wellness dashboard</li>
-                        <li>✓ Instant fall alerts</li>
-                        <li>✓ Sleep pattern insights</li>
-                    </ul>
-                    <button class="w-full py-3 border border-[#1B7A4A] text-[#1B7A4A] rounded-lg font-bold">Start Free Trial</button>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-200">
+                    <div class="text-red-600 font-bold mb-2">Fragmented Care</div>
+                    <h3 class="text-xl font-bold mb-3">Information Silos</h3>
+                    <p class="text-sm opacity-70">Agencies and families operate with incomplete data, leading to reactive crisis management.</p>
                 </div>
-
-                <div class="bg-white rounded-[20px] border-2 border-[#0D7377] p-8 shadow-2xl scale-105 relative">
-                    <span class="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#0D7377] text-white px-4 py-1 rounded-full text-xs font-bold">MOST POPULAR</span>
-                    <h3 class="text-xl font-bold text-center mb-4">Agency Care</h3>
-                    <div class="text-center mb-6">
-                        <span class="text-5xl font-black text-[#0D7377]">£45</span>
-                        <span class="text-gray-500">/month</span>
-                    </div>
-                    <p class="text-xs text-center text-gray-400 mb-6">per client · No setup fee</p>
-                    <ul class="text-sm space-y-3 mb-8">
-                        <li>✓ Agency monitoring dashboard</li>
-                        <li>✓ Automated risk alerts</li>
-                        <li>✓ Carer mobile app</li>
-                    </ul>
-                    <button class="w-full py-3 bg-[#0D7377] text-white rounded-lg font-bold">Request a Demo</button>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-200">
+                    <div class="text-red-600 font-bold mb-2">High Costs</div>
+                    <h3 class="text-xl font-bold mb-3">Hospital Admissions</h3>
+                    <p class="text-sm opacity-70">Minor issues escalate into multi-billion pound emergency costs because they aren't caught early.</p>
                 </div>
-
-                <div class="bg-white rounded-[20px] border border-gray-200 p-8 hover:shadow-xl transition-all">
-                    <h3 class="text-xl font-bold text-center mb-4">Connected Care</h3>
-                    <div class="text-center mb-6">
-                        <span class="text-4xl font-black text-[#0D7377]">£45</span>
-                        <span class="text-gray-500">/agency</span>
-                    </div>
-                    <ul class="text-sm space-y-3 mb-8">
-                        <li>✓ Everything in Agency Care</li>
-                        <li>✓ Shared care timeline</li>
-                        <li>✓ Two-way communication</li>
-                    </ul>
-                    <button class="w-full py-3 bg-gray-100 text-gray-800 rounded-lg font-bold">Get Started</button>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-200">
+                    <div class="text-red-600 font-bold mb-2">Burnout</div>
+                    <h3 class="text-xl font-bold mb-3">Agency Overload</h3>
+                    <p class="text-sm opacity-70">Carers are stretched thin, managing risks manually without real-time intelligence.</p>
                 </div>
             </div>
         </div>
     </section>
 
-</body>
-</html>
+    <section id="solution" class="relative py-24 bg-[#0D1F38] overflow-hidden">
+        <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(circle, rgba(13,192,198,0.4) 1.5px, transparent 1.5px); background-size: 40px 40px;"></div>
+        <div class="max-w-[1100px] mx-auto px-6 relative z-20 text-center">
+            <p class="text-[11px] font-semibold tracking-[0.18em] uppercase text-[#14C0C6] mb-4">Our Solution</p>
+            <h2 class="font-extrabold text-4xl md:text-5xl text-white mb-6">
+                The UK care system is fragmented. <br>
+                <em class="italic text-[#14C0C6]">ecosensse unifies it.</em>
+            </h2>
+            <p class="text-lg text-white/60 max-w-2xl mx-auto mb-12">
+                ECOSENSSE is the <strong>intelligent connective layer</strong> that brings every stakeholder into one unified platform, turning reactive crisis management into coordinated, proactive care.
+            </p>
+            <div class="max-w-[700px] mx-auto bg-white/5 rounded-3xl p-12 border border-white/10 shadow-2xl">
+                <p class="text-[#14C0C6] font-bold">ECOSENSSE Ecosystem: The Unified Circle of Care</p>
+                <div class="mt-4 flex justify-around text-4xl">
+                    <span>🏠</span><span>→</span><span>🤖</span><span>→</span><span>🏥</span>
+                </div>
+                <p class="mt-4 text-sm text-white/40 italic">Home Monitoring • AI Analysis • Agency Action</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="platform" class="py-24 bg-[#F8FAFC] text-gray-900">
+        <div class="max-w-[1200px] mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4 text-[#0A2342]">Our Platform</h2>
+                <p class="max-w-2xl mx-auto text-lg text-gray-600">Connecting the entire UK care circle with real-time intelligence.</p>
+            </div>
