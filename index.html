@@ -3,171 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ECOSENSSE | Proactive Elderly Care SaaS</title>
+    <title>ecoSENSSEhealth | Proactive Care</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
     <style>
-        html { scroll-behavior: smooth; }
-        @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
-        .animate-fadeUp { animation: fadeUp 0.8s forwards; }
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; margin: 0; }
+        .circuit-bg {
+            background-color: #0D1F38;
+            background-image: 
+                linear-gradient(rgba(13,192,198,0.1) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(13,192,198,0.1) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+        .vignette { background: radial-gradient(circle at center, transparent 0%, rgba(13,31,56,0.8) 100%); }
     </style>
 </head>
-<body class="bg-[#0D1F38] text-white font-sans">
+<body class="bg-white text-[#0A2342]">
 
-    <nav class="sticky top-0 z-50 w-full bg-white/95 backdrop-blur border-b border-gray-200">
-        <div class="max-w-[1200px] mx-auto flex h-20 items-center justify-between px-6">
-            <div class="flex items-center space-x-2">
-                <span class="font-bold text-2xl text-[#0A2342]">eco<span style="color: #d4183d">SENSSE</span>health</span>
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-gray-100 h-20 flex items-center px-6">
+        <div class="max-w-[1200px] mx-auto w-full flex justify-between items-center">
+            <div class="text-2xl font-extrabold tracking-tighter">
+                eco<span style="color: #d4183d">SENSSE</span>health
             </div>
-            <div class="hidden md:flex items-center space-x-8">
-                <a href="#problem" class="text-sm font-bold text-[#0A2342] hover:text-[#d4183d]">Problem</a>
-                <a href="#solution" class="text-sm font-bold text-[#0A2342] hover:text-[#d4183d]">Solution</a>
-                <a href="#platform" class="text-sm font-bold text-[#0A2342] hover:text-[#d4183d]">Platform</a>
-                <a href="#pricing" class="text-sm font-bold text-[#0A2342] hover:text-[#d4183d]">Pricing</a>
-                <a href="mailto:contact@ecosenssehealth.com" class="px-5 py-2.5 bg-[#0D7377] text-white rounded-lg text-sm font-bold">Get Started</a>
+            <div class="hidden md:flex space-x-6 text-sm font-bold uppercase tracking-wider">
+                <a href="#problem" class="hover:text-[#d4183d]">Problem</a>
+                <a href="#solution" class="hover:text-[#d4183d]">Solution</a>
+                <a href="#pricing" class="hover:text-[#d4183d]">Pricing</a>
+                <a href="mailto:contact@ecosenssehealth.com" class="bg-[#0D7377] text-white px-4 py-2 rounded">Contact</a>
             </div>
         </div>
     </nav>
 
-    <section class="min-h-[70vh] flex flex-col justify-center relative py-20 px-6 overflow-hidden bg-[#0D1F38]" 
-             style="background-image: linear-gradient(rgba(13,192,198,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(13,192,198,0.1) 1px, transparent 1px); background-size: 40px 40px;">
-        <div class="relative z-10 max-w-[1200px] mx-auto">
-            <h1 class="mb-10 animate-fadeUp">
-                <span class="block font-['Playfair_Display'] text-[clamp(32px,5vw,66px)] font-black leading-tight">
-                    The Cost of Silence is <span class="text-[#E8A020]">£2.3 Billion.</span>
-                </span>
-            </h1>
-            <div class="mb-8 py-5 pl-6 border-l-[3px] border-[#0D7377] animate-fadeUp" style="animation-delay: 0.2s">
-                <p class="text-[clamp(17px,2vw,21px)] text-[#E8EDF4]/75 leading-relaxed font-light">
-                    Every year, unmonitored events escalate into major UK hospital admissions. <br><strong>ECOSENSSE ends the silence between care visits.</strong>
-                </p>
-            </div>
+    <section class="circuit-bg relative py-20 text-white overflow-hidden">
+        <div class="absolute inset-0 vignette"></div>
+        <div class="max-w-[1200px] mx-auto px-6 relative z-10">
+            <h1 class="font-['Playfair_Display'] text-5xl md:text-7xl mb-6">The Cost of Silence is <span class="text-[#E8A020]">£2.3 Billion.</span></h1>
+            <p class="text-xl text-white/70 max-w-2xl mb-8">ECOSENSSE ends the silence between care visits, turning reactive crisis into proactive care.</p>
+            <a href="#partner" class="inline-block bg-[#0D7377] px-8 py-4 rounded-xl font-bold hover:scale-105 transition">Join Pilot Programme</a>
         </div>
     </section>
 
-    <section id="problem" class="py-24 bg-[#F7F7F8] text-[#0A2342]">
+    <section id="problem" class="py-20 bg-[#F7F7F8]">
         <div class="max-w-[1200px] mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-5xl font-bold mb-4">The Problem</h2>
-                <p class="max-w-2xl mx-auto text-lg opacity-70">The current care system fails everyone involved—from overwhelmed agencies to anxious families.</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-200">
-                    <div class="text-red-600 font-bold mb-2">Fragmented Care</div>
-                    <h3 class="text-xl font-bold mb-3">Information Silos</h3>
-                    <p class="text-sm opacity-70">Agencies and families operate with incomplete data, leading to reactive crisis management.</p>
+            <h2 class="text-4xl font-black text-center mb-12">The Problem</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                    <div class="text-[#d4183d] font-bold text-xs mb-2">FRAGMENTATION</div>
+                    <h3 class="font-bold text-xl mb-2">Siloed Data</h3>
+                    <p class="text-gray-500 text-sm">Families and agencies have no shared visibility, leading to missed warnings.</p>
                 </div>
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-200">
-                    <div class="text-red-600 font-bold mb-2">High Costs</div>
-                    <h3 class="text-xl font-bold mb-3">Hospital Admissions</h3>
-                    <p class="text-sm opacity-70">Minor issues escalate into multi-billion pound emergency costs because they aren't caught early.</p>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                    <div class="text-[#d4183d] font-bold text-xs mb-2">COST</div>
+                    <h3 class="font-bold text-xl mb-2">NHS Pressure</h3>
+                    <p class="text-gray-500 text-sm">Minor health dips escalate to emergency room visits because they aren't caught early.</p>
                 </div>
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-200">
-                    <div class="text-red-600 font-bold mb-2">Burnout</div>
-                    <h3 class="text-xl font-bold mb-3">Agency Overload</h3>
-                    <p class="text-sm opacity-70">Carers are stretched thin, managing risks manually without real-time intelligence.</p>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                    <div class="text-[#d4183d] font-bold text-xs mb-2">LIABILITY</div>
+                    <h3 class="font-bold text-xl mb-2">Agency Burnout</h3>
+                    <p class="text-gray-500 text-sm">Manual tracking is impossible to scale, leaving managers overwhelmed.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="solution" class="relative py-24 bg-[#0D1F38] overflow-hidden">
-        <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(circle, rgba(13,192,198,0.4) 1.5px, transparent 1.5px); background-size: 40px 40px;"></div>
-        <div class="max-w-[1100px] mx-auto px-6 relative z-20 text-center">
-            <p class="text-[11px] font-semibold tracking-[0.18em] uppercase text-[#14C0C6] mb-4">Our Solution</p>
-            <h2 class="font-extrabold text-4xl md:text-5xl text-white mb-6">
-                The UK care system is fragmented. <br>
-                <em class="italic text-[#14C0C6]">ecosensse unifies it.</em>
-            </h2>
-            <p class="text-lg text-white/60 max-w-2xl mx-auto mb-12">
-                ECOSENSSE is the <strong>intelligent connective layer</strong> that brings every stakeholder into one unified platform, turning reactive crisis management into coordinated, proactive care.
-            </p>
-            <div class="max-w-[700px] mx-auto bg-white/5 rounded-3xl p-12 border border-white/10 shadow-2xl">
-                <p class="text-[#14C0C6] font-bold">ECOSENSSE Ecosystem: The Unified Circle of Care</p>
-                <div class="mt-4 flex justify-around text-4xl">
-                    <span>🏠</span><span>→</span><span>🤖</span><span>→</span><span>🏥</span>
-                </div>
-                <p class="mt-4 text-sm text-white/40 italic">Home Monitoring • AI Analysis • Agency Action</p>
+    <section id="solution" class="circuit-bg py-20 text-white text-center relative">
+        <div class="absolute inset-0 vignette"></div>
+        <div class="max-w-[900px] mx-auto px-6 relative z-10">
+            <p class="text-[#14C0C6] font-bold text-xs tracking-widest mb-4">OUR SOLUTION</p>
+            <h2 class="text-4xl md:text-5xl font-black mb-6">eco<span class="italic text-[#14C0C6]">sensse</span> unifies the care circle.</h2>
+            <p class="text-white/60 text-lg mb-12">We are the intelligent connective layer for agencies, families, and the NHS.</p>
+            <div class="bg-white/5 border border-white/10 p-10 rounded-3xl">
+                
             </div>
         </div>
     </section>
 
-    <section id="platform" class="py-24 bg-[#F8FAFC] text-gray-900">
+    <section id="pricing" class="py-20 bg-white">
         <div class="max-w-[1200px] mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-5xl font-bold mb-4 text-[#0A2342]">Our Platform</h2>
-                <p class="max-w-2xl mx-auto text-lg text-gray-600">Connecting the entire UK care circle with real-time intelligence.</p>
-            </div>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-                <div class="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm">
-                    <span class="text-4xl mb-4 block">🏥</span>
-                    <h3 class="font-bold text-[#0A2342] mb-2">Care Agencies</h3>
-                    <p class="text-sm text-gray-500">Dashboards & alerts. £45/mo per client.</p>
-                </div>
-                <div class="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm">
-                    <span class="text-4xl mb-4 block">👨‍👩‍👧</span>
-                    <h3 class="font-bold text-[#0A2342] mb-2">Families</h3>
-                    <p class="text-sm text-gray-500">Live wellness updates. £10/mo.</p>
-                </div>
-                <div class="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm">
-                    <span class="text-4xl mb-4 block">🧓</span>
-                    <h3 class="font-bold text-[#0A2342] mb-2">Elderly</h3>
-                    <p class="text-sm text-gray-500">Discreet wearable monitoring.</p>
-                </div>
-                <div class="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm">
-                    <span class="text-4xl mb-4 block">🏛️</span>
-                    <h3 class="font-bold text-[#0A2342] mb-2">NHS</h3>
-                    <p class="text-sm text-gray-500">Preventative health data.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="pricing" class="py-24 bg-white text-gray-900">
-        <div class="max-w-[1200px] mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-[#0A2342]">Simple SaaS Pricing</h2>
-            </div>
+            <h2 class="text-center text-4xl font-black mb-12">SaaS Pricing</h2>
             <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                 <div class="p-8 border rounded-2xl bg-gray-50">
-                    <h3 class="text-xl font-bold mb-2">For Families</h3>
-                    <p class="text-4xl font-black text-[#1B7A4A] mb-4">£10<span class="text-sm font-normal text-gray-500">/mo</span></p>
-                    <ul class="space-y-3 text-gray-600 mb-8">
-                        <li>✓ Live wellness dashboard</li>
-                        <li>✓ Fall alerts & Sleep insights</li>
-                    </ul>
-                    <a href="mailto:contact@ecosenssehealth.com" class="block text-center py-3 border border-[#1B7A4A] text-[#1B7A4A] rounded-lg font-bold">Start Free Trial</a>
+                    <h3 class="font-bold text-xl mb-2">Families</h3>
+                    <p class="text-3xl font-black text-[#1B7A4A] mb-4">£10<span class="text-sm font-normal text-gray-500">/mo</span></p>
+                    <p class="text-sm text-gray-600">Full wellness dashboard and instant alerts.</p>
                 </div>
-                <div class="p-8 border-2 border-[#0D7377] rounded-2xl bg-white shadow-xl scale-105">
-                    <h3 class="text-xl font-bold mb-2">For Care Agencies</h3>
-                    <p class="text-4xl font-black text-[#0D7377] mb-4">£45<span class="text-sm font-normal text-gray-500">/mo/client</span></p>
-                    <ul class="space-y-3 text-gray-600 mb-8">
-                        <li>✓ Agency risk dashboard</li>
-                        <li>✓ Carer mobile tools</li>
-                        <li>✓ Full API integration</li>
-                    </ul>
-                    <a href="mailto:contact@ecosenssehealth.com" class="block text-center py-3 bg-[#0D7377] text-white rounded-lg font-bold">Request Demo</a>
+                <div class="p-8 border-2 border-[#0D7377] rounded-2xl bg-white shadow-xl">
+                    <h3 class="font-bold text-xl mb-2">Agencies</h3>
+                    <p class="text-3xl font-black text-[#0D7377] mb-4">£45<span class="text-sm font-normal text-gray-500">/mo/client</span></p>
+                    <p class="text-sm text-gray-600">Risk-monitoring dashboard and carer mobile tools.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="partner" class="py-24 bg-[#0D1F38] text-white text-center">
-        <div class="max-w-3xl mx-auto px-6">
-            <p class="text-[#14A7AC] font-bold tracking-widest uppercase mb-4">Pilot Programme</p>
-            <h2 class="text-3xl md:text-4xl font-bold mb-6">Be part of something that changes UK care.</h2>
-            <p class="text-white/60 mb-10">We are selectively inviting 10 care agencies to join our founding cohort before the <strong>SFC fund deadline on January 31, 2026.</strong></p>
-            <div class="bg-white/5 border border-white/10 p-10 rounded-3xl">
-                <button class="px-8 py-4 bg-[#0D7377] rounded-xl font-bold hover:bg-[#14A7AC] transition-all">Register Your Interest</button>
-            </div>
+    <section id="partner" class="py-20 circuit-bg text-white text-center">
+        <div class="max-w-[700px] mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-6">Become a Pilot Partner</h2>
+            <p class="text-white/60 mb-8">Join 10 exclusive agencies ahead of the Jan 31, 2026 SFC deadline.</p>
+            <a href="mailto:contact@ecosenssehealth.com" class="bg-[#0D7377] px-8 py-3 rounded-lg font-bold">Inquire Now</a>
         </div>
     </section>
 
-    <footer class="bg-[#F7F7F8] py-16 text-[#0A2342] border-t border-gray-200">
-        <div class="max-w-[1200px] mx-auto px-6 text-center">
-            <span class="font-bold text-xl block mb-4">eco<span style="color: #d4183d">SENSSE</span>health</span>
-            <p class="text-xs opacity-50">© 2026 ecosenssehealth. All rights reserved.</p>
-        </div>
+    <footer class="py-10 text-center text-xs text-gray-400 border-t border-gray-100">
+        © 2026 ecosenssehealth. All rights reserved.
     </footer>
 
 </body>
