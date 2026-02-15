@@ -5,19 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ECOSENSSE | Home Care SaaS</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
+    <style>
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fadeUp { animation: fadeUp 0.8s forwards; }
+    </style>
 </head>
-<body class="bg-white text-gray-900">
-    <div id="root">
+<body class="bg-[#0D1F38] text-white font-sans">
 
-       <section class="p-10 text-center">
-          <h1 class="text-4xl font-bold">ECOSENSSE</h1>
-          <p class="text-xl mt-4">Smart Monitoring for Home Care Agencies</p>
-          <div class="mt-8 bg-blue-100 p-6 rounded-lg inline-block">
-             <p class="font-bold">Agencies: £45/month per client</p>
-             <p>Families: £15/month per client</p>
-          </div>
-       </section>
+    <section class="min-h-[85vh] flex flex-col justify-center relative pt-[100px] pb-16 px-6 md:px-12 overflow-hidden bg-[#0D1F38]" 
+             style="background-image: linear-gradient(rgba(13,192,198,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(13,192,198,0.1) 1px, transparent 1px); background-size: 40px 40px;">
+        
+        <div class="relative z-10 max-w-[1200px] mx-auto w-full">
+            <h1 class="mb-10">
+                <span class="block font-['Playfair_Display'] text-[clamp(32px,4.9vw,66px)] font-black text-white leading-[1.0] tracking-tight animate-fadeUp">
+                    The Cost of Silence is <span class="relative inline-block text-[#E8A020]">£2.3 Billion.</span>
+                </span>
+            </h1>
 
-    </div>
+            <div class="mb-8 py-5 pl-6 border-l-[3px] border-[#0D7377] animate-fadeUp" style="animation-delay: 0.4s">
+                <p class="text-base font-bold tracking-[0.2em] uppercase text-[#14C0C6] mb-2.5">The Black Box of Home Care</p>
+                <p class="text-[clamp(17px,2vw,21px)] text-[#E8EDF4]/75 leading-[1.7] font-light">
+                    Every year, <strong>"minor" unmonitored events</strong> escalate into major UK hospital admissions. 
+                    Between care visits, nobody is watching. <strong>ecosensse ends the silence.</strong>
+                </p>
+            </div>
+
+            <div class="flex items-center gap-5 flex-wrap animate-fadeUp" style="animation-delay: 0.7s">
+                <a href="#" class="px-8 py-4 bg-[#0D7377] text-white rounded-[10px] text-sm font-bold hover:bg-[#14C0C6] transition-all">Get Started →</a>
+                <a href="#" class="px-7 py-[15px] border border-white/20 text-white/70 rounded-[10px] text-[15px] hover:border-white">Register Pilot Interest</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-white text-gray-900">
+        <div class="max-w-[1200px] mx-auto px-10">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4">Simple, transparent pricing.</h2>
+                <p class="text-lg text-gray-600">Plans built specifically for how you engage with elderly care.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-[20px] border border-gray-200 p-8 hover:shadow-xl transition-all">
+                    <h3 class="text-xl font-bold text-center mb-4">Family Care</h3>
+                    <div class="text-center mb-6">
+                        <span class="text-4xl font-black text-[#1B7A4A]">£10</span>
+                        <span class="text-gray-500">/month</span>
+                    </div>
+                    <ul class="text-sm space-y-3 mb-8">
+                        <li>✓ Live wellness dashboard</li>
+                        <li>✓ Instant fall alerts</li>
+                        <li>✓ Sleep pattern insights</li>
+                    </ul>
+                    <button class="w-full py-3 border border-[#1B7A4A] text-[#1B7A4A] rounded-lg font-bold">Start Free Trial</button>
+                </div>
+
+                <div class="bg-white rounded-[20px] border-2 border-[#0D7377] p-8 shadow-2xl scale-105 relative">
+                    <span class="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#0D7377] text-white px-4 py-1 rounded-full text-xs font-bold">MOST POPULAR</span>
+                    <h3 class="text-xl font-bold text-center mb-4">Agency Care</h3>
+                    <div class="text-center mb-6">
+                        <span class="text-5xl font-black text-[#0D7377]">£45</span>
+                        <span class="text-gray-500">/month</span>
+                    </div>
+                    <p class="text-xs text-center text-gray-400 mb-6">per client · No setup fee</p>
+                    <ul class="text-sm space-y-3 mb-8">
+                        <li>✓ Agency monitoring dashboard</li>
+                        <li>✓ Automated risk alerts</li>
+                        <li>✓ Carer mobile app</li>
+                    </ul>
+                    <button class="w-full py-3 bg-[#0D7377] text-white rounded-lg font-bold">Request a Demo</button>
+                </div>
+
+                <div class="bg-white rounded-[20px] border border-gray-200 p-8 hover:shadow-xl transition-all">
+                    <h3 class="text-xl font-bold text-center mb-4">Connected Care</h3>
+                    <div class="text-center mb-6">
+                        <span class="text-4xl font-black text-[#0D7377]">£45</span>
+                        <span class="text-gray-500">/agency</span>
+                    </div>
+                    <ul class="text-sm space-y-3 mb-8">
+                        <li>✓ Everything in Agency Care</li>
+                        <li>✓ Shared care timeline</li>
+                        <li>✓ Two-way communication</li>
+                    </ul>
+                    <button class="w-full py-3 bg-gray-100 text-gray-800 rounded-lg font-bold">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
 </html>
